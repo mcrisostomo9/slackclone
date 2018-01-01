@@ -1,9 +1,10 @@
-package com.deviseinteractive.slack
+package com.deviseinteractive.slack.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.deviseinteractive.slack.R
 
 class LoginActivity : AppCompatActivity() {
 
