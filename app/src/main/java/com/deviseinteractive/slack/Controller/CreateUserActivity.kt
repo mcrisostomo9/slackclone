@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.deviseinteractive.slack.R
+import com.deviseinteractive.slack.Services.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
@@ -48,5 +49,11 @@ class CreateUserActivity : AppCompatActivity() {
         avatarColor = "[$savedR, $savedG, $savedB, 1]"
     }
 
-    fun createUserClicked(view: View){}
+    fun createUserClicked(view: View){
+        AuthService.registerUser(this, "markus@gmail.com", "abcdef") { complete ->
+            if (complete) {
+
+            }
+        }
+    }
 }
